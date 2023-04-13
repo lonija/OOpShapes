@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace OOpShapes
 {
-    internal class Square : Shape
+    internal class Circle : Shape
     {
-        private int side;
-        public Square(int a)
+        private int radius;
+        public Circle(int r)
         {
-            this.side = a;
+            this.radius = r;
         }
         public override double GetArea()
         {
-            return this.side * this.side;
+            return 3.14 * radius * radius;
         }
     }
 }
